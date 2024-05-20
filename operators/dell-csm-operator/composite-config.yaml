@@ -1,0 +1,13 @@
+---
+components:
+- destination:
+    path: dell-csm-operator
+  name: v4.16
+  strategy:
+    name: basic
+    template:
+      config:
+        input: catalog-templates/v4.16.yaml
+        output: catalog.yaml
+      schema: olm.builder.basic
+schema: olm.composite
