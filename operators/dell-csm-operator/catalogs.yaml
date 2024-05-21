@@ -1,0 +1,9 @@
+---
+catalogs:
+- builders:
+  - olm.builder.basic
+  - olm.builder.semver
+  destination:
+    workingDir: ../../catalogs/v4.16
+  name: v4.16
+schema: olm.composite.catalogs
