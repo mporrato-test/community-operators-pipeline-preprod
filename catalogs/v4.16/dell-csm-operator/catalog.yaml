@@ -18,6 +18,16 @@
     ]
 }
 {
+    "schema": "olm.channel",
+    "name": "beta",
+    "package": "dell-csm-operator",
+    "entries": [
+        {
+            "name": "dell-csm-operator.v0.1.0"
+        }
+    ]
+}
+{
     "schema": "olm.bundle",
     "name": "dell-csm-operator.v0.1.0",
     "package": "dell-csm-operator",

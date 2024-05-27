@@ -12,5 +12,11 @@ name: alpha
 package: dell-csm-operator
 schema: olm.channel
 ---
+entries:
+- name: dell-csm-operator.v0.1.0
+name: beta
+package: dell-csm-operator
+schema: olm.channel
+---
 image: quay.io/community-operator-pipeline-stage/dell-csm-operator@sha256:72cd2b223fae420e460171348abde726505d6f0f64e684055434284dc4436e34
 schema: olm.bundle
