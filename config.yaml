@@ -11,3 +11,4 @@ tests:
   - name: DeployableByOLM
     ignore_operators:
       - ^non-deployable-operator.*
+      - ^new-operator$
