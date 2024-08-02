@@ -1,2 +1,3 @@
 # FBC related
 bin/
+.catalog_cache/
