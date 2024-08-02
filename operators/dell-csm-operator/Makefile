@@ -10,8 +10,8 @@
 # - basic: generates a basic catalog
 # - semver: generates a catalog with semver versioning
 
-PDW=$(shell pwd)
-OPERATOR_NAME=$(shell basename $(PDW))
+PWD=$(shell pwd)
+OPERATOR_NAME=$(shell basename $(PWD))
 TOPDIR=$(abspath $(dir $(PWD))/../)
 BINDIR=${TOPDIR}/bin
 
@@ -21,7 +21,7 @@ export PATH := $(BINDIR):$(PATH)
 CATALOG_DIR=${TOPDIR}/catalogs
 
 # A place to store the operator catalog templates
-OPERATOR_CATALOG_TEMPLATE_DIR = ${PDW}/catalog-templates
+OPERATOR_CATALOG_TEMPLATE_DIR = ${PWD}/catalog-templates
 
 # A list of OCP versions to generate catalogs for
 # This list can be customized to include the versions that are relevant to the operator
@@ -35,7 +35,7 @@ fbc-onboarding: fbc-onboarding-deps ${BINDIR}/opm clean
 		--repo-root $(TOPDIR) \
 		--operator-name $(OPERATOR_NAME) \
 		--cache-dir $(TOPDIR)/.catalog_cache \
-		--verbose
+		--stage
 
 .PHONY: catalog
 # replace this stub with one customized to serve your needs ... some examples below
